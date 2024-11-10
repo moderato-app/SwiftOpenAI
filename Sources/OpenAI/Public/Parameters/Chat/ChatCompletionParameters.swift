@@ -427,7 +427,7 @@ public struct ChatCompletionParameters: Encodable {
     temperature: Double? = nil,
     topProbability: Double? = nil,
     user: String? = nil,
-    streamOptions: StreamOptions)
+    streamOptions: StreamOptions? = nil)
   {
     self.messages = messages
     self.model = model.value
