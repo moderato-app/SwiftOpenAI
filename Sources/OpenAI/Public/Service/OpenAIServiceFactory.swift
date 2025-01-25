@@ -151,9 +151,9 @@ public class OpenAIServiceFactory {
          apiKey: apiKey,
          baseURL: overrideBaseURL,
          proxyPath: proxyPath,
-         configuration: configuration,
          overrideVersion: overrideVersion,
          extraHeaders: extraHeaders,
+         configuration: configuration,
          debugEnabled: debugEnabled)
    }
 }
