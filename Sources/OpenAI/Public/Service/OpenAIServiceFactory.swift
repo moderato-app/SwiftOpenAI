@@ -139,6 +139,7 @@ public class OpenAIServiceFactory {
    /// - Returns: A fully configured object conforming to `OpenAIService`.
    public static func service(
       apiKey: String,
+      configuration: URLSessionConfiguration = .default,
       overrideBaseURL: String,
       proxyPath: String? = nil,
       overrideVersion: String? = nil,
@@ -150,6 +151,7 @@ public class OpenAIServiceFactory {
          apiKey: apiKey,
          baseURL: overrideBaseURL,
          proxyPath: proxyPath,
+         configuration: configuration,
          overrideVersion: overrideVersion,
          extraHeaders: extraHeaders,
          debugEnabled: debugEnabled)

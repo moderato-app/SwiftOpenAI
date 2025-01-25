@@ -363,6 +363,11 @@ public struct ChatCompletionParameters: Encodable {
       enum CodingKeys: String, CodingKey {
           case includeUsage = "include_usage"
       }
+
+      public init(includeUsage: Bool) {
+        self.includeUsage = includeUsage
+      }
+
    }
    
    /// Parameters for audio output. Required when audio output is requested with modalities: ["audio"]
